@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+
 import axios from 'axios';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import momentTimezonePlugin from '@fullcalendar/moment-timezone';
-import { usTimeZones } from '../utils/timezones';
+
 import BookingModal from './BookingModal';
+import { usTimeZones } from '../utils/timezones';
 
 function Calendar() {
   const [timeZone, setTimeZone] = useState('America/Denver');
