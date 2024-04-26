@@ -73,7 +73,7 @@ function Calendar() {
             meridiem: 'short'
           }}
           validRange={{
-            start: '2024-04-24',
+            start: '2024-04-26',
             end: '2024-05-06'
           }}
           firstDay={1}
